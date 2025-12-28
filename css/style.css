@@ -201,7 +201,7 @@ button:active button:hover .btn:active,
 /* .......xxxx.........about-area......xxxxxx........ */
 /* .................brand area.................. */
 .site-main .brand-area {
-  padding: 1rem 20rem;
+  padding: 3rem 20rem;
 }
 .site-main .brand-area .first-row .col-lg-4 {
   display: flex;
