@@ -1,13 +1,13 @@
-$(document).ready(function() {
+$(document).ready(function () {
   let $btns = $(".project-area .button-group button");
 
-  $btns.click(function(e) {
+  $btns.click(function (e) {
     $(".project-area .button-group button").removeClass("active");
     e.target.classList.add("active");
 
     let selector = $(e.target).attr("data-filter");
     $(".project-area .grid").isotope({
-      filter: selector
+      filter: selector,
     });
 
     return false;
@@ -16,6 +16,12 @@ $(document).ready(function() {
 
   $(".project-area .grid .test-popup-link").magnificPopup({
     type: "image",
-    gallery: { enabled: true }
+    gallery: { enabled: true },
   });
 });
+function downloadResume() {
+  const link = document.createElement("a");
+  link.href = "./img/resume.pdf";
+  link.download = "resume.pdf";
+  link.click();
+}
